@@ -50,7 +50,7 @@ html {
   grid-template-areas:
     'nothing headerr nada'
     'nothing paragraph nada';
-  background: url('https://images.unsplash.com/photo-1576606515563-11efe8d73af1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-color: rgba(0, 0, 0, 0.4);
   background-size: cover;
   background-position: center;
   padding-bottom: 1.5em;
@@ -112,6 +112,7 @@ html {
     'nada project1 pic1 ignore'
     'nada project2 pic2 ignore'
     'nada project3 pic3 ignore';
+  background-color: rgba(0, 0, 0, 0.4);
   .title {
     color: white;
     grid-area: header;
@@ -195,7 +196,10 @@ html {
   }
 }
 #contact {
-  background-color: white;
+  padding-top: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-shadow: 0px 1px 5px black;
   font-size: 2em;
   text-align: center;
 }
