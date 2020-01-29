@@ -4,30 +4,125 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/ba6f5f095e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dist/css/styles.css" />
     <title>Resume</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar" id="nav">
       <ul>
         <li>
-          <a href="#about"></a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#skills"></a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <a href="#education"></a>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#contact"> Contact</a>
         </li>
       </ul>
+      <a href="javascript:void(0);" class="icon" onclick="navDropdown()"><i class="fa fa-bars"></i></a>
     </nav>
     <!-- wrapper -->
     <div class="wrapper">
-      <section id="home">
-        <h1>Korryn Kazeway</h1>
-        <p>Hi, I'm Korryn Kazeway. </p>
+      <section id="about3">
+        <h1 id="about">Korryn Kazeway</h1>
+        <p id="homepara">
+          Hi, I'm Korryn Kazeway. Born in the great state of New York. As a child I remember my father bringing me in to work for the standard
+          <strong><em>bring your daughter to work day</em></strong> and spent the whole day watching him type away on his computer. Not really knowing what he was doing, he showed me how he could type
+          things on the computer and make it do stuff. From that point on I can remember always wanting to become a software developer. As such, once I graduated high school it was an easy choice as
+          to what I was doing in college.
+          <br />
+          This website was built by me (yay!) as a resume to show off some of the projects that I am most proud of. You'll also find a way to contact me at the bottom of this page.
+        </p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul id="ul1">
+          <li><i class="far fa-thumbs-up"></i> HTML5</li>
+          <li><i class="far fa-thumbs-up"></i> CSS</li>
+          <li><i class="far fa-thumbs-up"></i> SASS</li>
+        </ul>
+        <ul id="ul2">
+          <li><i class="far fa-thumbs-up"></i> Bootstrap</li>
+          <li><i class="far fa-thumbs-up"></i> JavaScript</li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h1 class="title">Projects</h1>
+        <img id="img1" src="https://source.unsplash.com/random/250x250" alt="" />
+        <div class="proj1">
+          <h3>Blog Page</h3>
+          <p>
+            This project started out as a simple blog page to learn how to use CSS Grid and make it responsive at various screen sizes. I also had a chance to play around with using Sass to write my
+            CSS for it, as it makes it much cleaner when writing <em>and</em> adds rules that I had not considered (rules such as -ms- and -webkit- for older browsers).
+          </p>
+        </div>
+        <img id="img2" src="https://source.unsplash.com/random/250x251" alt="" />
+        <div class="proj2">
+          <h3>Blog Administrator Page</h3>
+          <p>
+            This project is an expansion of the Blog Page project I mentioned previously. Having had a look at Bootstrap, I thought it would be good to learn how to make a more complex webpage in a
+            simpler manner. Bootstrap enables the creation of complex webpages without the hassle that comes with having to manually decide everything with pure CSS.
+          </p>
+        </div>
+        <img id="img3" src="https://source.unsplash.com/random/251x250" alt="" />
+        <div class="proj3">
+          <h3>Making Meals</h3>
+          <p>
+            This restaurant website was made as an experiment into adding JavaScript and JQuery to a typical HTML/CSS website I created earlier on in my learning experience. I had a lot of fun doing
+            this, though it could be frustrating at times when the scripts wouldn't do as I expected, though eventually I figured them out.
+          </p>
+        </div>
+      </section>
+      <section id="education">
+        <div class="college1">
+          <h3>True Square Community College</h3>
+          <h4>2010-2012</h4>
+          <p>Graduated with Associate Degree in Information Technology</p>
+        </div>
+        <div class="college2">
+          <h3>Oregon State University</h3>
+          <h4>2012-2014</h4>
+          <p>Graduated Cum Laude with Bachelors in Web Development</p>
+        </div>
+        <div class="college3">
+          <h3>Oregon State University</h3>
+          <h4>2019-Present</h4>
+          <p>Pursuing Masters in Web Development</p>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="info">
+          <h3>Feel Free to Contact Me Below!</h3>
+          <p>
+            Phone:(555) 555-5555 <br />
+            Email: korrynk@email.com
+          </p>
+        </div>
       </section>
     </div>
     <!-- wrapper ends -->
   </body>
+  <footer id="foot">
+    <p>Copyright &copy; Korryn Kazeway <span id="year"></span></p>
+  </footer>
+  <script>
+    document.getElementById('year').innerHTML = new Date().getFullYear();
+
+    function navDropdown() {
+      var elem = document.getElementById('nav');
+      if (elem.className === 'navbar') {
+        elem.className += ' responsive';
+      } else {
+        elem.className = 'navbar';
+      }
+    }
+  </script>
 </html>
