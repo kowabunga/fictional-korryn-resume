@@ -14,6 +14,7 @@ html {
 }
 .navbar {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1;
   ul {
@@ -181,20 +182,27 @@ html {
   padding: 15px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-    'college1'
-    'college2'
-    'college3';
+    'fafa heada afaf'
+    'college1 college1 college1'
+    'college2 college2 college2'
+    'college3 college3 college3';
   font-size: 1.5em;
+  h2 {
+    grid-area: heada;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
   p {
     color: rgb(72, 71, 71);
   }
-  #college1 {
+  .college1 {
     grid-area: college1;
   }
-  #college2 {
+  .college2 {
     grid-area: college2;
   }
-  #college3 {
+  .college3 {
     grid-area: college3;
   }
 }
@@ -254,6 +262,11 @@ html {
   }
   #education {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      'heada'
+      'college1'
+      'college2'
+      'college3';
   }
   #foot {
     text-align: center;
@@ -285,6 +298,14 @@ html {
     .proj3 {
       grid-area: project3;
     }
+  }
+  #education {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'heada'
+      'college1'
+      'college2'
+      'college3';
   }
   .navbar {
     ul {

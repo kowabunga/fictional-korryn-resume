@@ -17,6 +17,7 @@ html {
 
 .navbar {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1;
 }
@@ -258,29 +259,45 @@ html {
   padding: 15px;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: 'college1' 'college2' 'college3';
+      grid-template-areas: 'fafa heada afaf' 'college1 college1 college1' 'college2 college2 college2' 'college3 college3 college3';
   font-size: 1.5em;
+}
+
+#education h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: heada;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #education p {
   color: #484747;
 }
 
-#education #college1 {
-  -ms-grid-row: 1;
+#education .college1 {
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: college1;
 }
 
-#education #college2 {
-  -ms-grid-row: 2;
+#education .college2 {
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: college2;
 }
 
-#education #college3 {
-  -ms-grid-row: 3;
+#education .college3 {
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: college3;
 }
 
@@ -362,6 +379,7 @@ html {
   #education {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        grid-template-areas: 'heada' 'college1' 'college2' 'college3';
   }
   #foot {
     text-align: center;
@@ -409,6 +427,11 @@ html {
     -ms-grid-row: 7;
     -ms-grid-column: 1;
     grid-area: project3;
+  }
+  #education {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'heada' 'college1' 'college2' 'college3';
   }
   .navbar ul {
     min-height: 89px;
