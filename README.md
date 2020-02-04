@@ -1,4 +1,5 @@
-#Fictional Resume for Korryn Kazeway
+Fictional Resume for Korryn Kazeway
+
 What I learned from this project:
 
 -Website layout using CSS Grid

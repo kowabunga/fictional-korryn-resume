@@ -154,11 +154,11 @@ html {
   -ms-grid-columns: 0.5fr 2fr 1fr 0.5fr;
       grid-template-columns: 0.5fr 2fr 1fr 0.5fr;
       grid-template-areas: 'nada header header ignore' 'nada project1 pic1 ignore' 'nada project2 pic2 ignore' 'nada project3 pic3 ignore';
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #eeeaea;
 }
 
 #projects .title {
-  color: white;
+  color: black;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -169,8 +169,8 @@ html {
 
 #projects .proj1 {
   background-color: rgba(255, 255, 255, 0.735);
-  -webkit-box-shadow: 0 2px 2px #ceecfd;
-          box-shadow: 0 2px 2px #ceecfd;
+  -webkit-box-shadow: 0 0 20px #ceecfd;
+          box-shadow: 0 0 20px #ceecfd;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -187,8 +187,8 @@ html {
 
 #projects .proj2 {
   background-color: rgba(255, 255, 255, 0.735);
-  -webkit-box-shadow: 0 2px 2px #ceecfd;
-          box-shadow: 0 2px 2px #ceecfd;
+  -webkit-box-shadow: 0 0 20px #ceecfd;
+          box-shadow: 0 0 20px #ceecfd;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -205,8 +205,8 @@ html {
 
 #projects .proj3 {
   background-color: rgba(255, 255, 255, 0.735);
-  -webkit-box-shadow: 0 2px 2px #ceecfd;
-          box-shadow: 0 2px 2px #ceecfd;
+  -webkit-box-shadow: 0 0 20px #ceecfd;
+          box-shadow: 0 0 20px #ceecfd;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -222,8 +222,8 @@ html {
 }
 
 #projects #img1 {
-  -webkit-box-shadow: 0 2px 2px #ceecfd;
-          box-shadow: 0 2px 2px #ceecfd;
+  -webkit-box-shadow: 0 0 20px #ceecfd;
+          box-shadow: 0 0 20px #ceecfd;
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: pic1;
@@ -232,8 +232,8 @@ html {
 }
 
 #projects #img2 {
-  -webkit-box-shadow: 0 2px 2px #ceecfd;
-          box-shadow: 0 2px 2px #ceecfd;
+  -webkit-box-shadow: 0 0 20px #ceecfd;
+          box-shadow: 0 0 20px #ceecfd;
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: pic2;
@@ -242,8 +242,8 @@ html {
 }
 
 #projects #img3 {
-  -webkit-box-shadow: 0 2px 2px #ceecfd;
-          box-shadow: 0 2px 2px #ceecfd;
+  -webkit-box-shadow: 0 0 20px #ceecfd;
+          box-shadow: 0 0 20px #ceecfd;
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: pic3;
@@ -255,12 +255,17 @@ html {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  background-color: #dcfffb;
   padding: 15px;
+  color: white;
+  font-size: 1.5em;
+  text-shadow: 0px 1px 5px black;
+  background-image: url(https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-position: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas: 'fafa heada afaf' 'college1 college1 college1' 'college2 college2 college2' 'college3 college3 college3';
-  font-size: 1.5em;
 }
 
 #education h2 {
@@ -277,7 +282,7 @@ html {
 }
 
 #education p {
-  color: #484747;
+  color: white;
 }
 
 #education .college1 {
@@ -301,18 +306,14 @@ html {
   grid-area: college3;
 }
 
-#contact {
-  padding-top: 15px;
-  background-color: #dcfffb;
-  color: black;
-  font-size: 2em;
-  text-align: center;
-}
-
 #foot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #1d1d1d;
   color: white;
   min-height: 3em;
@@ -323,6 +324,27 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#foot .info {
+  padding: 15px 0 5px 0;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#foot .icons .fab {
+  margin-left: 0.3em;
+}
+
+#foot .icons .fab:hover {
+  color: #ceecfd;
+  cursor: pointer;
+}
+
+#foot p {
+  margin-top: 30px;
 }
 
 @media (max-width: 500px) {
