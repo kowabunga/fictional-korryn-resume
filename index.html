@@ -28,7 +28,7 @@
           <a href="#contact"> Contact</a>
         </li>
       </ul>
-      <a href="javascript:void(0);" class="icon" id="menubtn"><i class="fa fa-bars"></i></a>
+      <a href="#" class="icon" id="menubtn"><i class="fa fa-bars"></i></a>
     </nav>
     <!-- wrapper -->
     <div class="wrapper">
@@ -119,23 +119,5 @@
     </div>
     <p>Copyright &copy; Korryn Kazeway <span id="year"></span></p>
   </footer>
-  <script>
-    window.addEventListener('hashchange', function() {
-      scrollBy(0, -89);
-    });
-
-    // get year for copyright
-    document.getElementById('year').innerHTML = new Date().getFullYear();
-
-    // menu toggle
-    menubtn.addEventListener('click', navDropdown);
-    function navDropdown() {
-      var elem = document.getElementById('nav');
-      if (elem.className === 'navbar') {
-        elem.className += ' responsive';
-      } else {
-        elem.className = 'navbar';
-      }
-    }
-  </script>
+  <script src="/dist/scripts/script.js"></script>
 </html>
