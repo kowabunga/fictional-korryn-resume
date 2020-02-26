@@ -5,9 +5,10 @@ window.addEventListener('hashchange', function() {
 // get year for copyright
 document.getElementById('year').innerHTML = new Date().getFullYear();
 
+const menubtn = document.getElementById('menubtn')
 // menu toggle
 menubtn.addEventListener('click', navDropdown);
 function navDropdown() {
-  var navBar = document.querySelector('.navbar');
+  const navBar = document.querySelector('.navbar');
   navBar.classList.toggle('responsive');
 }

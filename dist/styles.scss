@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Arial Narrow Bold', sans-serif;
 }
+
 html {
   background-color: rgba(29, 29, 29, 0.9);
   background: url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
@@ -12,11 +13,13 @@ html {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
+
   ul {
     top: 0;
     left: 0;
@@ -26,6 +29,7 @@ html {
     display: flex;
     justify-content: end;
   }
+
   li a,
   a.icon {
     font-size: 1.5em;
@@ -33,18 +37,22 @@ html {
     padding: 0 1em;
     color: white;
   }
+
   li a:hover {
     color: rgb(0, 187, 255);
     transition: 0.15s;
   }
+
   a.icon {
     display: none;
   }
 }
+
 .wrapper {
   padding-top: 5.5em;
   display: grid;
 }
+
 #about3 {
   display: grid;
   grid-template-columns: 0.1fr 1fr 0.1fr;
@@ -56,6 +64,7 @@ html {
   background-position: center;
   padding-bottom: 1.5em;
 }
+
 #about {
   padding: 0.3em;
   font-size: 3em;
@@ -64,6 +73,7 @@ html {
   color: white;
   text-shadow: 0px 1px 5px black;
 }
+
 #homepara {
   font-size: 1.5em;
   padding: 0.3em;
@@ -71,9 +81,11 @@ html {
   text-shadow: 0px 1px 5px black;
   grid-area: paragraph;
 }
+
 .fa-thumbs-up {
   color: rgba(48, 48, 48, 0.9);
 }
+
 #skills {
   display: grid;
   grid-template-areas:
@@ -85,12 +97,14 @@ html {
   width: 100%;
   box-shadow: 0 5px 5px white;
   background-color: #dee2d9;
+
   h2 {
     padding-top: 10px;
     font-size: 6em;
     text-align: center;
     grid-area: head;
   }
+
   #ul1 {
     list-style-type: none;
     font-size: 1.3em;
@@ -98,6 +112,7 @@ html {
     align-self: center;
     justify-self: center;
   }
+
   #ul2 {
     list-style-type: none;
     font-size: 1.3em;
@@ -106,6 +121,7 @@ html {
     justify-self: center;
   }
 }
+
 #projects {
   grid-gap: 20px;
   padding: 10px;
@@ -117,57 +133,70 @@ html {
     'nada project2 pic2 ignore'
     'nada project3 pic3 ignore';
   background-color: rgb(238, 234, 234);
+
   .title {
     color: black;
     grid-area: header;
     text-align: center;
     font-size: 6em;
   }
+
   .proj1 {
     background-color: rgba(255, 255, 255, 0.735);
     box-shadow: 0 0 20px rgb(206, 236, 253);
     align-self: center;
+
     h3 {
       text-align: center;
       margin-bottom: 1em;
     }
+
     padding: 10px;
     grid-area: project1;
   }
+
   .proj2 {
     background-color: rgba(255, 255, 255, 0.735);
     box-shadow: 0 0 20px rgb(206, 236, 253);
     align-self: center;
+
     h3 {
       text-align: center;
       margin-bottom: 1em;
     }
+
     padding: 10px;
     grid-area: project2;
   }
+
   .proj3 {
     background-color: rgba(255, 255, 255, 0.735);
     box-shadow: 0 0 20px rgb(206, 236, 253);
     align-self: center;
+
     h3 {
       text-align: center;
       margin-bottom: 1em;
     }
+
     padding: 10px;
     grid-area: project3;
   }
+
   #img1 {
     box-shadow: 0 0 20px rgb(206, 236, 253);
     grid-area: pic1;
     width: 100%;
     height: auto;
   }
+
   #img2 {
     box-shadow: 0 0 20px rgb(206, 236, 253);
     grid-area: pic2;
     width: 100%;
     height: auto;
   }
+
   #img3 {
     box-shadow: 0 0 20px rgb(206, 236, 253);
     grid-area: pic3;
@@ -175,6 +204,7 @@ html {
     height: auto;
   }
 }
+
 #education {
   display: grid;
   grid-gap: 20px;
@@ -186,33 +216,38 @@ html {
   background-position: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    'fafa heada afaf'
-    'college1 college1 college1'
-    'college2 college2 college2'
-    'college3 college3 college3';
+    'heada'
+    'college1'
+    'college2'
+    'college3';
+
   h2 {
     grid-area: heada;
     text-align: center;
     justify-content: center;
     align-items: center;
   }
+
   p {
     color: white;
   }
+
   .college1 {
     grid-area: college1;
   }
+
   .college2 {
     grid-area: college2;
   }
+
   .college3 {
     grid-area: college3;
   }
 }
 
-#foot {
+.foot {
   display: flex;
   flex-direction: column;
   background-color: rgb(29, 29, 29);
@@ -221,6 +256,7 @@ html {
   font-size: 1.5em;
   align-items: center;
   justify-content: center;
+
   .info {
     padding: 15px 0 5px 0;
     color: white;
@@ -228,17 +264,21 @@ html {
     margin-bottom: 30px;
     text-align: center;
   }
+
   .icons .fab {
     margin-left: 0.3em;
   }
+
   .icons .fab:hover {
     color: rgb(206, 236, 253);
     cursor: pointer;
   }
+
   p {
     margin-top: 30px;
   }
 }
+
 @media (max-width: 500px) {
   #home {
     grid-template-columns: 1fr;
@@ -246,6 +286,7 @@ html {
       'headerr'
       'paragraph';
   }
+
   #homepara {
     margin-left: 10px;
     margin-right: 10px;
@@ -253,30 +294,38 @@ html {
 
   #projects {
     grid-template-columns: 1fr;
-    grid-template-areas: 'header' 'pic1' 'project1' 'pic2' 'project2' 'pic3' 'project3';
+    grid-template-areas: 'header''pic1''project1''pic2''project2''pic3''project3';
+
     .title {
       grid-area: header;
       font-size: 4em;
     }
+
     #img1 {
       grid-area: pic1;
     }
+
     .proj1 {
       grid-area: project1;
     }
+
     #img2 {
       grid-area: pic2;
     }
+
     .proj2 {
       grid-area: project2;
     }
+
     #img3 {
       grid-area: pic3;
     }
+
     .proj3 {
       grid-area: project3;
     }
   }
+
   #education {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -285,37 +334,47 @@ html {
       'college2'
       'college3';
   }
-  #foot {
+
+  .foot {
     text-align: center;
   }
 }
+
 @media (max-width: 600px) {
   #projects {
     grid-template-columns: 1fr;
-    grid-template-areas: 'header' 'pic1' 'project1' 'pic2' 'project2' 'pic3' 'project3';
+    grid-template-areas: 'header''pic1''project1''pic2''project2''pic3''project3';
+
     .title {
       grid-area: header;
       font-size: 4em;
     }
+
     #img1 {
       grid-area: pic1;
     }
+
     .proj1 {
       grid-area: project1;
     }
+
     #img2 {
       grid-area: pic2;
     }
+
     .proj2 {
       grid-area: project2;
     }
+
     #img3 {
       grid-area: pic3;
     }
+
     .proj3 {
       grid-area: project3;
     }
   }
+
   #education {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -324,10 +383,12 @@ html {
       'college2'
       'college3';
   }
+
   .navbar {
     ul {
       min-height: 89px;
     }
+
     a.icon {
       display: block;
       position: fixed;
@@ -335,23 +396,28 @@ html {
       right: 0.5em;
       padding: 0.5em;
     }
+
     li {
       display: none;
     }
   }
+
   .navbar.responsive {
     ul {
       display: grid;
       grid-template-columns: 1fr;
       justify-items: end;
     }
+
     li {
       display: block;
       padding: 0.5em;
     }
+
     li a {
       font-size: 2em;
     }
+
     a.icon {
       position: fixed;
       top: 0.85em;
