@@ -65,7 +65,7 @@ html {
   display: grid;
   -ms-grid-columns: 0.1fr 1fr 0.1fr;
       grid-template-columns: 0.1fr 1fr 0.1fr;
-      grid-template-areas: 'nothing headerr nada' 'nothing paragraph nada';
+      grid-template-areas: 'nothing headerr nada' 'nothing paragraph nada';
   background-color: rgba(0, 0, 0, 0.4);
   background-size: cover;
   background-position: center;
@@ -94,20 +94,21 @@ html {
 }
 
 .fa-thumbs-up {
-  color: rgba(48, 48, 48, 0.9);
+  color: white;
 }
 
 #skills {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'nothinn head head nadaa' 'nothinn bodyl bodyr nadaa';
+      grid-template-areas: 'nothinn head head nadaa' 'nothinn bodyl bodyr nadaa';
   margin-left: auto;
   margin-right: auto;
   height: 15em;
   width: 100%;
   -webkit-box-shadow: 0 5px 5px white;
           box-shadow: 0 5px 5px white;
-  background-color: #dee2d9;
+  background-color: #1b1b1b;
+  color: white;
 }
 
 #skills h2 {
@@ -153,7 +154,7 @@ html {
   display: grid;
   -ms-grid-columns: 0.5fr 2fr 1fr 0.5fr;
       grid-template-columns: 0.5fr 2fr 1fr 0.5fr;
-      grid-template-areas: 'nada header header ignore' 'nada project1 pic1 ignore' 'nada project2 pic2 ignore' 'nada project3 pic3 ignore';
+      grid-template-areas: 'nada header header ignore' 'nada project1 pic1 ignore' 'nada project2 pic2 ignore' 'nada project3 pic3 ignore';
   background-color: #eeeaea;
 }
 
@@ -265,7 +266,7 @@ html {
   background-repeat: no-repeat;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      grid-template-areas: 'heada' 'college1' 'college2' 'college3';
+      grid-template-areas: 'heada' 'college1' 'college2' 'college3';
 }
 
 #education h2 {
@@ -348,7 +349,7 @@ html {
   #home {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'headerr' 'paragraph';
+        grid-template-areas: 'headerr' 'paragraph';
   }
   #homepara {
     margin-left: 10px;
@@ -398,7 +399,7 @@ html {
   #education {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'heada' 'college1' 'college2' 'college3';
+        grid-template-areas: 'heada' 'college1' 'college2' 'college3';
   }
   .foot {
     text-align: center;
@@ -450,7 +451,7 @@ html {
   #education {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 'heada' 'college1' 'college2' 'college3';
+        grid-template-areas: 'heada' 'college1' 'college2' 'college3';
   }
   .navbar ul {
     min-height: 89px;
