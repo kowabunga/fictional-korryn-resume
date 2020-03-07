@@ -1,0 +1,147 @@
+@media (max-width: 500px) {
+    #home {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'headerr'
+            'paragraph';
+    }
+
+    #homepara {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'header''pic1''project1''pic2''project2''pic3''project3';
+
+        .title {
+            grid-area: header;
+            font-size: 4em;
+        }
+
+        #img1 {
+            grid-area: pic1;
+        }
+
+        .proj1 {
+            grid-area: project1;
+        }
+
+        #img2 {
+            grid-area: pic2;
+        }
+
+        .proj2 {
+            grid-area: project2;
+        }
+
+        #img3 {
+            grid-area: pic3;
+        }
+
+        .proj3 {
+            grid-area: project3;
+        }
+    }
+
+    #education {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'heada'
+            'college1'
+            'college2'
+            'college3';
+    }
+
+    .foot {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    #projects {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'header''pic1''project1''pic2''project2''pic3''project3';
+
+        .title {
+            grid-area: header;
+            font-size: 4em;
+        }
+
+        #img1 {
+            grid-area: pic1;
+        }
+
+        .proj1 {
+            grid-area: project1;
+        }
+
+        #img2 {
+            grid-area: pic2;
+        }
+
+        .proj2 {
+            grid-area: project2;
+        }
+
+        #img3 {
+            grid-area: pic3;
+        }
+
+        .proj3 {
+            grid-area: project3;
+        }
+    }
+
+    #education {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'heada'
+            'college1'
+            'college2'
+            'college3';
+    }
+
+    .navbar {
+        ul {
+            min-height: 89px;
+        }
+
+        a.icon {
+            display: block;
+            position: fixed;
+            top: 0.85em;
+            right: 0.5em;
+            padding: 0.5em;
+      }
+
+      li {
+          display: none;
+      }
+      }
+
+      .navbar.responsive {
+          ul {
+              display: grid;
+              grid-template-columns: 1fr;
+              justify-items: end;
+          }
+
+          li {
+              display: block;
+              padding: 0.5em;
+          }
+
+          li a {
+              font-size: 2em;
+          }
+
+          a.icon {
+              position: fixed;
+              top: 0.85em;
+              right: 0.5em;
+              padding: 0.5em;
+          }
+      }
+      }
